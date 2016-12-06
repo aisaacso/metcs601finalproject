@@ -1,0 +1,198 @@
+/* preload video lightbox images */
+body:after {
+  content: url(../images/play.jpeg);
+  display:none;
+}
+
+body {
+    background: url('../images/drawing.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color:white;
+    background-color:#333;
+    font-family: 'Open Sans',Helvetica,Sans-Serif;
+}
+
+#nav-logo {
+	height: 300%;
+
+}
+
+:hover {
+  cursor:hand;
+}
+
+#nav-logo:hover {
+  height:500%;
+  cursor:hand;
+}
+
+p {
+  color:blue;
+}
+
+.jumbotron {
+  background: black;
+  opacity: 0.5;
+  width:75%;
+}
+
+.navbar {
+  background: transparent;
+}
+
+.nav.navbar-nav li a,  .nav.navbar-nav .navbar-text {
+  color:white;
+
+}
+
+#hongbio, #jinbio, #alfonsobio {
+  display:none;
+}
+
+.bio {
+    background-color: gray;
+    opacity: 0.75;
+    font-size: 24px;
+    color:white;
+}
+
+.loctitle, .eventstitle {
+  font-size: 32px;
+}
+
+#map-outer, #events-outer {  
+    height: 440px; 
+    padding: 20px; 
+    border: 2px solid #CCC; 
+    margin-bottom: 20px; 
+    background-color:black;
+    opacity: 0.85; 
+}
+#map-container, #calendar-container { 
+  height: 400px }
+  @media all and (max-width: 991px) {
+    #map-outer  { height: 650px }
+    }
+
+.program-body {
+  display:none;
+}
+
+.panel-body {
+  color:black;
+}
+
+#programsidebar, #mypagesidebar {
+  background-color: black;
+  opacity: 0.5;
+  height:450px;
+}
+
+#programsidebar li, #mypagesidebar li {
+  font-size: 25px;
+}
+
+.programoption, .biooption {
+  opacity:0.5;
+  background-color: black;
+}
+
+.programoption:hover, .biooption:hover {
+  opacity:1;
+  font-style: bold;
+  cursor:hand;
+}
+
+#programstitle {
+  font-size: 50px;
+  background-color: black;
+  opacity: 0.5;
+  width: 570px;
+}
+
+#memday, #blackbelt, #breaking, #bbelttest, #sparring {
+  padding: 12px;
+  margin-bottom: 0px;
+}
+
+.row {
+  margin-bottom: 12px;
+}
+
+.mediatitle {
+  font-size: 64px;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.imgcaption {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.imgview {
+  height:150px;
+  border: solid white;
+}
+
+/* video lightbox stuff */
+
+.lightboxcontainer {
+  width:100%;
+  text-align:left;
+  color:black;
+}
+.lightboxleft {
+  width: 40%;
+  float:left;
+}
+.lightboxright {
+  width: 60%;
+  float:left;
+}
+.lightboxright iframe {
+  min-height: 390px;
+}
+.divtext {
+  margin: 36px;
+}
+@media (max-width: 800px) {
+  .lightboxleft {
+    width: 100%;
+  }
+  .lightboxright {
+    width: 100%;
+  }
+  .divtext {
+    margin: 12px;
+  }
+}
+
+#apparentlylink:hover, #beatlink:hover {
+  opacity:0.75;
+  cursor:hand;
+}
+
+form {
+  width:75%;
+  background-color:black;
+  opacity:0.75;
+  padding:15px;
+  display:none;
+}
+
+#inforow {
+  display:none;
+  background-color: black;
+  opacity: 0.5;
+  width:75%;
+}
+
+#mypageheader {
+  background-color: black;
+  opacity: 0.5;
+  width:75%;
+}

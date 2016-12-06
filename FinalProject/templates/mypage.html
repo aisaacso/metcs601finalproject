@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Page</title>
+
+    <script src="https://use.fontawesome.com/da7663fed7.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="../stylesheets/styles.css">
+    
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="mypage.html">My Page</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <a class="navbar-brand" href="../index.html">
+                        <img id="nav-logo" class=".image-responsive" alt="Logo" src="../images/logo.png">
+                    </a>
+                    <li><a href="photos.html">Photos</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="col-md-9">
+            <div class="row">
+                <h1 id='mypageheader'>Account status</h1>
+            </div>
+            <div class="row" id="buttonrow">
+                <button class="btn btn-default" id="haveaccountbtn">I already have an account</button>
+                <button class="btn btn-default" id="createaccountbtn">I'd like to create an account</button>
+            </div>
+            <div class="row" id="inforow">
+                <div class="col-md-6">
+                    <h2>Your classes</h2>
+                </div>
+                <div class="col-md-6">
+                    <h2>Your dues</h2>
+                    <!--
+                    <button class="btn btn-default" id="paydues">Pay dues now</button>
+                    <form id="cc-form">
+                        <div class="form-group">
+                            <label for="creditcardnumber">Credit card number</label>
+                            <input type="number" class="form-control" id="creditcardnumber">
+                        </div>
+                        <div class="form-group">
+                            <label for="expirationmonth">Expiration month</label>
+                            <input type="month" class="form-control" id="expirationmonth">
+                        </div>
+                        <div class="form-group">
+                            <label for="expirationyear"> Expiration year</label>
+                            <input type="number" length='4' class="form=control" id="expirationyear">
+                        </div>
+                        <button class="btn btn-default" type="button" id="submit-credit-card">Submit</button>
+                    </form>
+                    -->
+                </div>
+            </div>
+            <div class="row" id="account-forms">
+                <form id="signinform">
+                    <div class="form-group">
+                        <label for="signinname">First name</label>
+                        <input type="text" class="form-control" id="signinname">
+                    </div>
+                    <div class="form-group">
+                        <label for="signinemail">Email address</label>
+                        <input type="email" class="form-control" id="signinemail">
+                    </div>
+                    <div class="form-group">
+                        <label for="signinpassword">Password</label>
+                        <input type="password" class="form-control" id="signinpassword">
+                    </div>
+                    <button type="submit" class="btn btn-default" id="submit-existing-account">Submit</button>
+                </form>
+
+                <form id="create-account">
+                    <div class="form-group">
+                        <label for="create-firstname">First name</label>
+                        <input type="text" class="form-control" id="create-firstname">
+                    </div>
+                    <div class="form-group">
+                        <label for="create-lastname">Last name</label>
+                        <input type="text" class="form-control" id="create-lastname">
+                    </div>
+                    <div class="form-group">
+                        <label for="create-email">Email address</label>
+                        <input type="email" class="form-control" id="create-email">
+                    </div>
+                    <div class="form-group" id="create-password-group">
+                        <label for="create-password">Create a password</label>
+                        <input type="password" class="form-control" id="create-password" placeholder="Must be between 4 and 10 characters">
+                    </div>
+                    <div class="form-group" id="reeneter-password-group">
+                        <label for="reenter-password">Re-enter your password</label>
+                        <input type="password" class="form-control" id="reenter-password">
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox">Please send me information about upcoming events
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-default" id="submit-new-account">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-3" id="mypagesidebar">
+            <h1>Create an account</h1>
+            <ul>
+                <li>Access your classes</li>
+                <li>Pay for classes</li>
+                <li>Find out about upcoming events</li>
+            </ul>
+        </div>
+        <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <li><a href="https://twitter.com/ritkd"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.facebook.com/GrandmasterHongsTaekwondo/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                <li><p class="navbar-text">5955 Post Road &#8226; North Kingstown, RI &#8226; 02852 </p></li>
+                <li><a href="mailto:hongsritkd@gmail.com">hongsritkd@gmail.com</a></li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+
+<script type="text/javascript" src="../js/scripts.js"></script>
+</body>
+</html>
